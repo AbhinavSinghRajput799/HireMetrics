@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareerSync | Resume ATS Optimizer</title>
+    <title>HireMetrics | Resume ATS Optimizer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,6 +49,14 @@
                 <p><strong>How it works:</strong> Paste a JD, upload your PDF resume, and we will highlight exactly what's missing to get you to the top of the pile.</p>
             </div>
 
+            <div id="loadingContent" class="content-box hidden">
+                <div class="loading-container">
+                    <div class="spinner"></div>
+                    <h3>Analyzing Resume...</h3>
+                    <p>Scanning keywords and comparing skills.</p>
+                </div>
+            </div>
+
             <div id="resultsContent" class="content-box hidden">
                 <h2>Analysis Results</h2>
                 <div class="score-container">
@@ -65,7 +73,7 @@
                     </div>
                     <div class="res-item">
                         <h4>Suggestions</h4>
-                        <p id="suggestionsText"></p>
+                        <ul id="suggestionsText" style="padding-left: 20px; list-style-type: disc;"></ul>
                     </div>
                 </div>
             </div>
@@ -83,6 +91,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
