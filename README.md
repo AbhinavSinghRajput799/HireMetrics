@@ -55,8 +55,8 @@ This project was built by a team of three friends during a hackathon with the go
 
 ## 📁 Project Structure
 
-HireMetrics/
-│
+HireMetrics/<br>
+│<br>
 ├── index.html # Main frontend UI<br>
 ├── style.css # Styling and responsive design<br>
 ├── script.js # Frontend logic and API calls<br>
